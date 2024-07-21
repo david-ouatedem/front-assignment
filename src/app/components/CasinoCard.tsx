@@ -22,11 +22,11 @@ const CasinoCard: React.FC<OwnProps> = ({
   className,
 }) => {
   return (
-    <div className="rounded bg-white customDropShadow p-4 w-full">
-      <div className="md:grid grid-cols-2 md:gap-4 lg:flex">
+    <div className="rounded bg-white customDropShadow p-4 w-full lg:flex items-center">
+      <div className="md:grid grid-cols-2 md:gap-4 lg:flex lg:shrink-0 lg:gap-4 w-full lg:w-fit">
         <div
           className={twMerge(
-            "flex items-center justify-center w-full h-[132px] md:h-full lg:max-w-[224px]",
+            "flex items-center justify-center w-full h-[132px] md:h-full lg:max-w-[224px] lg:shrink-0",
             className
           )}
         >
@@ -40,7 +40,7 @@ const CasinoCard: React.FC<OwnProps> = ({
             />
           </figure>
         </div>
-        <div className="lg:flex">
+        <div className="lg:flex lg:gap-12 lg:items-center">
           <div>
             <a href="#">
               <h2
@@ -60,7 +60,7 @@ const CasinoCard: React.FC<OwnProps> = ({
               ))}
             </div>
           </div>
-          <div className="mt-5 md:mt-8 lg:mt-0 flex flex-col items-center md:items-start">
+          <div className="mt-5 md:mt-8 lg:mt-0 flex flex-col items-center md:items-start lg:w-full">
             <p className="font-medium !font-[600] text-xl text-black leading-[24px]">
               Bonus
             </p>
@@ -70,12 +70,14 @@ const CasinoCard: React.FC<OwnProps> = ({
           </div>
         </div>
       </div>
-      <button
-        type="button"
-        className="mt-4 md:mt-5 font-[700] font-regular text-xl rounded-[10px] h-[64px] w-full bg-secondary text-white text-center hover:bg-[#056A21] transition-all duration-300 ease-out"
-      >
-        Bet Now
-      </button>
+      <div className="w-full max-w-[190px]">
+        <button
+          type="button"
+          className="mt-4 md:mt-5 lg:mt-0 font-[700] font-regular text-xl rounded-[10px] h-[64px] w-full bg-secondary text-white text-center hover:bg-[#056A21] transition-all duration-300 ease-out"
+        >
+          Bet Now
+        </button>
+      </div>
     </div>
   );
 };
