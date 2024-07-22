@@ -22,6 +22,41 @@ export default function RootLayout({
         <link rel="preload" href={IMAGES.grosvenor} as="image" />
         <link rel="preload" href={IMAGES.hajper} as="image" />
         <link rel="preload" href={IMAGES.happysins} as="image" />
+        <link
+          rel="preload"
+          href="../assets/fonts/Montserrat-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="../assets/fonts/Montserrat-Black.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="../assets/fonts/Montserrat-Bold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="../assets/fonts/Montserrat-Medium.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="../assets/fonts/Montserrat-SemiBold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
