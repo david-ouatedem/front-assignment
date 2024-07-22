@@ -1,6 +1,7 @@
 import Image from "next/image";
-import CasinoCard from "./components/CasinoCard";
 import IMAGES from "@/assets/images";
+import dynamic from "next/dynamic";
+const CasinoCard = dynamic(() => import("@/app/components/CasinoCard"));
 
 export default function Home() {
   return (
