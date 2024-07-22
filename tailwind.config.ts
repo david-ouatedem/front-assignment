@@ -19,11 +19,13 @@ const config: Config = {
         sm: "280px",
         ls: "684px",
         ms: "703px",
-        md: "900px",
-        lg: "1220px",
+        md: "744px",
+        lg: "1200px",
+        xl: "1440px",
       },
       colors: {
         primary: "#939393",
+        secondary: "#009129",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
