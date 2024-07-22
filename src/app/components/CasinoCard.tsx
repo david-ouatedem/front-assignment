@@ -23,7 +23,7 @@ const CasinoCard: React.FC<OwnProps> = ({
 }) => {
   return (
     <div className="rounded bg-white customDropShadow p-4 w-full lg:flex items-center lg:gap-5">
-      <div className="md:grid grid-cols-2 md:gap-4 lg:flex lg:gap-4 xl:gap-12 w-full">
+      <div className="md:grid grid-cols-2 md:gap-4 lg:flex lg:gap-12 w-full">
         <div
           className={twMerge(
             "flex items-center justify-center w-full h-[132px] md:h-full lg:max-w-[224px] lg:shrink-0",
@@ -40,7 +40,7 @@ const CasinoCard: React.FC<OwnProps> = ({
             />
           </figure>
         </div>
-        <div className="lg:flex lg:gap-12 xl:gap-20 lg:items-center shrink-0">
+        <div className="lg:flex lg:gap-20 lg:items-center shrink-0">
           <div>
             <a href="#">
               <h2
