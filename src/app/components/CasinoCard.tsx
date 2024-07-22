@@ -37,6 +37,7 @@ const CasinoCard: React.FC<OwnProps> = ({
               src={imageSrc}
               alt={imageAlt}
               className="max-h[256px] h-auto w-auto"
+              priority
             />
           </figure>
         </div>
